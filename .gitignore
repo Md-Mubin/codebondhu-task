@@ -1,0 +1,29 @@
+# Dependencies
+client/node_modules
+server/node_modules
+
+# Build outputs
+dist
+dist-ssr
+client/dist
+client/dist-ssr
+server/dist
+build
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Misc
+.env
+.env.local
+.env.*.local
+
