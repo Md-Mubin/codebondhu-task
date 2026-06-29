@@ -103,12 +103,6 @@ export default function PurchaseDetailPage() {
                   <td colSpan={4} className="px-4 py-3 text-right font-medium">Subtotal</td>
                   <td className="px-4 py-3 text-right font-bold">${purchase.subtotal.toFixed(2)}</td>
                 </tr>
-                {purchase.tax > 0 && (
-                  <tr>
-                    <td colSpan={4} className="px-4 py-2 text-right font-medium">Tax</td>
-                    <td className="px-4 py-2 text-right font-bold">${purchase.tax.toFixed(2)}</td>
-                  </tr>
-                )}
                 <tr>
                   <td colSpan={4} className="px-4 py-3 text-right text-lg font-bold">Total</td>
                   <td className="px-4 py-3 text-right text-lg font-bold">${purchase.total.toFixed(2)}</td>

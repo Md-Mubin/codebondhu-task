@@ -91,7 +91,6 @@ export interface Purchase {
   date: string
   items: PurchaseItem[]
   subtotal: number
-  tax: number
   total: number
   status: "draft" | "posted" | "cancelled"
   createdAt: string
@@ -114,7 +113,6 @@ export interface Sale {
   date: string
   items: SaleItem[]
   subtotal: number
-  tax: number
   total: number
   status: "draft" | "posted" | "cancelled"
   createdAt: string

@@ -15,7 +15,6 @@ export interface IPurchase extends Document {
   date: Date;
   items: IPurchaseItem[];
   subtotal: number;
-  tax: number;
   total: number;
   status: string;
 }
@@ -36,7 +35,6 @@ const PurchaseSchema = new Schema<IPurchase>(
     date: { type: Date, default: Date.now },
     items: { type: [PurchaseItemSchema], default: [] },
     subtotal: { type: Number, default: 0 },
-    tax: { type: Number, default: 0 },
     total: { type: Number, default: 0 },
     status: { type: String, default: 'draft' }
   },

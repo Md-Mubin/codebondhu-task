@@ -260,12 +260,6 @@ export default function PurchaseFormPage() {
               <span>Subtotal</span>
               <span className="font-medium">${(watch("subtotal") || 0).toFixed(2)}</span>
             </div>
-            <div className="grid gap-4 md:grid-cols-2 max-w-xs">
-              <div className="space-y-2">
-                <Label htmlFor="tax">Tax</Label>
-                <Input id="tax" type="number" step="0.01" {...register("tax")} />
-              </div>
-            </div>
             <div className="flex justify-between text-lg font-bold border-t pt-4">
               <span>Total</span>
               <span>${(watch("total") || 0).toFixed(2)}</span>

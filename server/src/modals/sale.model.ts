@@ -15,7 +15,6 @@ export interface ISale extends Document {
   date: Date;
   items: ISaleItem[];
   subtotal: number;
-  tax: number;
   total: number;
   status: string;
 }
@@ -36,7 +35,6 @@ const SaleSchema = new Schema<ISale>(
     date: { type: Date, default: Date.now },
     items: { type: [SaleItemSchema], default: [] },
     subtotal: { type: Number, default: 0 },
-    tax: { type: Number, default: 0 },
     total: { type: Number, default: 0 },
     status: { type: String, default: 'draft' }
   },

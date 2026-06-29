@@ -136,12 +136,6 @@ export default function SaleDetailPage() {
                   <td colSpan={4} className="px-4 py-3 text-right font-medium">Subtotal</td>
                   <td className="px-4 py-3 text-right font-bold">${sale.subtotal.toFixed(2)}</td>
                 </tr>
-                {sale.tax > 0 && (
-                  <tr>
-                    <td colSpan={4} className="px-4 py-2 text-right font-medium">Tax</td>
-                    <td className="px-4 py-2 text-right font-bold">${sale.tax.toFixed(2)}</td>
-                  </tr>
-                )}
                 <tr>
                   <td colSpan={4} className="px-4 py-3 text-right text-lg font-bold">Total</td>
                   <td className="px-4 py-3 text-right text-lg font-bold">${sale.total.toFixed(2)}</td>
