@@ -100,7 +100,7 @@ export default function SaleFormPage() {
     setValue("total", total)
   }, [watchedItems, watchedTax, setValue])
 
-  const handleProductChange = (index: number, productId: string) => {
+  const handleProductChange = (index: number, productId: string) => { 
     const product = products.find((p) => p._id === productId)
     if (product) {
       setValue(`items.${index}.sku`, product.sku)
